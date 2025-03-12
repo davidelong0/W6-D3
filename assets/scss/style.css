@@ -213,6 +213,45 @@ table {
   margin-inline: 48px;
 }
 
+.btn-primario {
+  background-color: #0e6cff;
+  color: #f4f4f4;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.btn-primario:hover {
+  transform: scale(1.05);
+}
+
+.btn-secondario {
+  background-color: #4caf50;
+  color: #f4f4f4;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.btn-secondario:hover {
+  transform: scale(1.05);
+}
+
+.btn-terziario {
+  background-color: #ff8700;
+  color: #f4f4f4;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.btn-terziario:hover {
+  transform: scale(1.05);
+}
+
 .header {
   background-color: #640fc5;
   color: #f4f4f4;
@@ -292,7 +331,6 @@ table {
 
 .hero .buttons button {
   padding: 8px 16px;
-  background-color: #0e6cff;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -302,45 +340,6 @@ table {
 
 .hero .buttons button:hover {
   background-color: #0055da;
-}
-
-.btn-primario {
-  background-color: #0e6cff;
-  color: #f4f4f4;
-  padding: 16px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.btn-primario:hover {
-  transform: scale(1.05);
-}
-
-.btn-secondario {
-  background-color: #4caf50;
-  color: #f4f4f4;
-  padding: 16px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.btn-secondario:hover {
-  transform: scale(1.05);
-}
-
-.btn-terziario {
-  background-color: #ff8700;
-  color: #f4f4f4;
-  padding: 16px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.btn-terziario:hover {
-  transform: scale(1.05);
 }
 
 .grid-container {
