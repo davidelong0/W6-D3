@@ -4,10 +4,13 @@
   align-items: center;
   text-align: center;
   height: 100vh; 
-  background: url('https://images6.alphacoders.com/135/thumb-1920-1357830.jpeg') no-repeat center center;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbszm2OXLnwB1KSHhlCmHFhME4WBLkQRgPPQ&s') no-repeat center center;
   background-size: cover;
   padding: $spacing-lg;
   position: relative; // Impostato per il corretto posizionamento dell'overlay
+  border: solid 3px $colore-bottone-secondario;
+    // Applica l'animazione di discesa
+    @include fade-slide('fadeInFromTop', 2s, -30px, 0.5s);
 }
 
 .hero::after {
@@ -29,16 +32,28 @@
   align-items: center; 
   text-align: center;
   color: $colore-bottone-secondario;
+  border: 3px solid;
+  margin-right: 20px;
+  background-color: $colore-testo;
 }
 
 .hero h1 {
   font-size: $font-size-title;
   margin-bottom: $spacing-lg; 
+    // Applica l'animazione di discesa
+    @include fade-slide('fadeInFromTop', 2s, -30px, 0.5s);
+}
+
+.hero img {
+  border: solid 3px $colore-bottone-secondario;
+
 }
 
 .hero p {
   font-size: $font-size-lg;
   margin-bottom: $spacing-xl; 
+    // Applica l'animazione di discesa
+    @include fade-slide('fadeInFromTop', 2s, -30px, 0.5s);
 }
 
 .hero .buttons {
@@ -50,16 +65,18 @@
 
 .hero .buttons button {
   padding: $spacing-sm $spacing-md;
- 
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
-  margin-bottom: $spacing-sm; 
+  margin-bottom: $spacing-sm;
+
+  // Applica l'animazione di discesa
+  @include fade-slide('fadeInFromTop', 2s, -30px, 0.5s); 
 }
 
 .hero .buttons button:hover {
-  background-color: darken($colore-bottone, 10%);
+  background-color: darken($colore-bg-hero, 10%); 
 }
 
   

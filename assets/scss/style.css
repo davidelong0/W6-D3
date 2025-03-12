@@ -286,10 +286,22 @@ table {
   align-items: center;
   text-align: center;
   height: 100vh;
-  background: url("https://images6.alphacoders.com/135/thumb-1920-1357830.jpeg") no-repeat center center;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbszm2OXLnwB1KSHhlCmHFhME4WBLkQRgPPQ&s") no-repeat center center;
   background-size: cover;
   padding: 24px;
   position: relative;
+  border: solid 3px #4caf50;
+  animation: fadeInFromTop 2s ease-out 0.5s forwards;
+}
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero::after {
@@ -311,16 +323,45 @@ table {
   align-items: center;
   text-align: center;
   color: #4caf50;
+  border: 3px solid;
+  margin-right: 20px;
+  background-color: #f4f4f4;
 }
 
 .hero h1 {
   font-size: 60px;
   margin-bottom: 24px;
+  animation: fadeInFromTop 2s ease-out 0.5s forwards;
+}
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero img {
+  border: solid 3px #4caf50;
 }
 
 .hero p {
   font-size: 24px;
   margin-bottom: 32px;
+  animation: fadeInFromTop 2s ease-out 0.5s forwards;
+}
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero .buttons {
@@ -337,10 +378,21 @@ table {
   border-radius: 5px;
   transition: background-color 0.3s;
   margin-bottom: 8px;
+  animation: fadeInFromTop 2s ease-out 0.5s forwards;
+}
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero .buttons button:hover {
-  background-color: #4e75b4;
+  background-color: #4c0b96;
 }
 
 .grid-container {
@@ -348,7 +400,7 @@ table {
   flex-wrap: wrap;
   gap: 16px;
   padding: 32px;
-  background-color: #f4f4f4;
+  background-color: #640fc5;
 }
 .grid-container > * {
   flex: 1 1 calc(100% / 4 - 16px);
@@ -360,6 +412,7 @@ table {
   border: none;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  border: 3px solid #4caf50;
 }
 .grid-container .grid-item img {
   width: 100%;

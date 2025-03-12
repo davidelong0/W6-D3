@@ -1,13 +1,14 @@
 .grid-container {
     @include grid(4);
     padding: $spacing-xl;
-    background-color: $colore-testo;
+    background-color: $colore-bg-hero;
   
     .grid-item {
       background-color: white;
       padding: $spacing-md;
       border-radius: 8px;
       @include floating(none, 0px 2px 5px rgba(0, 0, 0, 0.1));
+      border: 3px solid $colore-bottone-secondario;
   
       img {
         width: 100%;
