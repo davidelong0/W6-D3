@@ -1,0 +1,41 @@
+.header {
+    background-color: $colore-bg-hero;
+    color: $colore-testo;
+    padding: $spacing-md;
+    border-bottom: 2px solid white;
+
+    .logo {
+        img {
+          width: 5%; 
+          height: auto; 
+        }
+      }
+      
+  
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      ul {
+        display: flex;
+        gap: $spacing-md;
+        list-style: none;
+        
+        li {
+          a {
+            color: $colore-testo;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  
+  
+  

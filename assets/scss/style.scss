@@ -1,0 +1,15 @@
+
+// questo file SCSS lo userò per importare i partials e lavorare in modo più organizzato
+
+// Importa i partials
+@import 'partials/reset';  // Prima di tutto, il reset
+@import 'partials/variables';  // Importa subito dopo il reset
+@import 'partials/mixins';
+@import 'partials/animations';
+@import 'partials/spacings';
+
+@import 'partials/header';
+@import 'partials/hero';
+@import 'partials/buttons';
+@import 'partials/grid';
+

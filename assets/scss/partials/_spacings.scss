@@ -1,0 +1,22 @@
+$spacings: (
+  "sm": $spacing-sm,
+  "md": $spacing-md,
+  "lg": $spacing-lg,
+  "xl": $spacing-xl,
+  "xxl": $spacing-xxl
+);
+
+@each $size, $value in $spacings {
+  .padding-block-#{$size} {
+    padding-block: $value;
+  }
+  .padding-inline-#{$size} {
+    padding-inline: $value;
+  }
+  .margin-block-#{$size} {
+    margin-block: $value;
+  }
+  .margin-inline-#{$size} {
+    margin-inline: $value;
+  }
+}

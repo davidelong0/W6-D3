@@ -1,0 +1,21 @@
+$bottoni: (
+  "primario": $colore-bottone-primario,
+  "secondario": $colore-bottone-secondario,
+  "terziario": $colore-bottone-terziario
+);
+
+@each $tipo, $colore in $bottoni {
+  .btn-#{$tipo} {
+    background-color: $colore;
+    color: $colore-testo;
+    padding: $spacing-md $spacing-lg;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
